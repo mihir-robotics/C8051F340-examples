@@ -2,7 +2,7 @@
  * Half_Stepping_Anticlockwise.c
  *
  *  Created on: 29-Aug-2021
- *      Author: Mihir Kulkarni PA-13 T-24
+ *   
  */
 
 #include "c8051f340.h"

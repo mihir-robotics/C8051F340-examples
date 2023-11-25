@@ -2,7 +2,7 @@
  * ADC_Program.c
  *
  *  Created on: 07-Sep-2021
- *      Author: Mihir Kulkarni PA-13 T-24
+ *  
  */
 
 //Program for ADC

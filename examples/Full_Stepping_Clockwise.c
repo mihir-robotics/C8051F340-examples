@@ -2,7 +2,7 @@
  * Full_Stepping_Clockwise.c
  *
  *  Created on: 29-Aug-2021
- *      Author: Mihir Kulkarni PA-13 T-24
+ *   
  */
 #include "c8051f340.h"
 void DelayMs(unsigned int Ms);

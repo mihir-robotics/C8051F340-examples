@@ -2,7 +2,7 @@
  * LCD_Program.c
  *
  *  Created on: 14-Aug-2021
- *      Author: Mihir Kulkarni PA-13 T24
+ *    
  */
 
 //Include the header file for C8051F340 Micro-controller

@@ -1,8 +1,3 @@
-/*
- * MA_RFID_CaseStudy.c
-
- *
- */
 
 // Program to interface EM-18 RFID reader and 16*2 LCD with C8051F340
 // Objective of program is to take RFID card number from reader and display data on LCD

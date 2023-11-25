@@ -2,7 +2,7 @@
  * PWM_Generation.c
  *
  *  Created on: 14-Sep-2021
- *      Author: Mihir Kulkarni PA-13 T-24
+ *  
  */
 
 #include "c8051F340.h"

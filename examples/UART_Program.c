@@ -2,7 +2,7 @@
  * UART_Program.c
  *
  *  Created on: 21-Sep-2021
- *      Author: Mihir Kulkarni PA-13 T-24
+ *  
  */
 
 #include "c8051F340.h"		//C8051F340 library
@@ -10,7 +10,7 @@
 #define BR_UART0 9600		//Set baud rate as 9600
 
 void main(){
-	// char ch[] = {"MIT"};
+	
 
 	int i;
 	OSCICN = 0x83;			//Configure internal oscillator for maximum frequency (12MHz)
