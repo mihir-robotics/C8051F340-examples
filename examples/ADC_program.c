@@ -5,10 +5,14 @@
  *  
  */
 
-//Program for ADC
+
+// 8051 Library
 #include "c8051F340.h"
+
+// System Clock
 #define SYSCLK 12000000
 
+// Delay Function
 void delayMs(unsigned int Ms){
 	unsigned int i,j;
 	for(i = 0; i < Ms;i++){
@@ -16,27 +20,49 @@ void delayMs(unsigned int Ms){
 	}
 }
 
+// Main
 void main(){
 
-	OSCICN = 0x83;		//System Clock 12MHz
-	XBR1 = 0x40;		//Enable Cross-bar
-	P4MDOUT = 0xff;		//P4 LED's connected make o/p
-	P2MDIN = 0xdf;		//P2.5 Analog Input
-	P2SKIP = 0x20;		//Skip P2.5
+	//System Clock 12MHz
+	OSCICN = 0x83;
 
-	REF0CN = 0x08;		//Set VDD as reference voltage for ADC
-	AMX0P = 0x04;		//P2.5 as ANIP+
-	AMX0N = 0x1f;		//Connect ANIP- to GND for single ended ADC
+	//Enable Cross-bar
+	XBR1 = 0x40;		
+	
+	//P4 LED's connected make o/p
+	P4MDOUT = 0xff;		
+	
+	//P2.5 Analog Input
+	P2MDIN = 0xdf;		
+	
+	//Skip P2.5
+	P2SKIP = 0x20;		
+
+	//Set VDD as reference voltage for ADC
+	REF0CN = 0x08;
+
+	//P2.5 as ANIP+
+	AMX0P = 0x04;		
+	
+	//Connect ANIP- to GND for single ended ADC
+	AMX0N = 0x1f;		
 
 	ADC0CF = (((SYSCLK/30000000)-1)<<3);
-	AD0EN = 1;			//Enable ADC0
-	AD0BUSY = 1;		//Give SOC
+	
+	//Enable ADC0
+	AD0EN = 1;
+	//Give SOC			
+	AD0BUSY = 1;		
 
-	while(AD0BUSY == 1){	//ADC0CN^AD0BUSY==1; Monitor EOC
+	//ADC0CN^AD0BUSY==1; Monitor EOC
+	while(AD0BUSY == 1){	
 		//wait for EOC
 	}
-	P4 = ~ADC0L;		//Display 10-bit A/D value on LED
+
+	//Display 10-bit A/D value on LED
+	P4 = ~ADC0L;		
 	delayMs(100);
+	
 	P4 = ~ADC0H;
 	delayMs(100);
 
