@@ -1,10 +1,7 @@
 /*
  * ADC_Program.c
- *
  *  Created on: 07-Sep-2021
- *  
  */
-
 
 // 8051 Library
 #include "c8051F340.h"
