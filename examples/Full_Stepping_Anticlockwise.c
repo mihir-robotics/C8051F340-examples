@@ -16,7 +16,7 @@ void main(){
 	// Configure Port 4 as output
 	P4MDOUT = 0XFF;
 
-	// Full Stepping routine for Motor
+	// Full Stepping (Anticlockwise) routine for Motor
 	while(1){
 		P4 = 0X22;
 		DelayMs(10);
