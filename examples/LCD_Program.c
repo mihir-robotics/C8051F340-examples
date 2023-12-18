@@ -1,8 +1,6 @@
 /*
  * LCD_Program.c
- *
  *  Created on: 14-Aug-2021
- *    
  */
 
 //Include the header file for C8051F340 Micro-controller

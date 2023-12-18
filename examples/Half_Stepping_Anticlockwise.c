@@ -1,8 +1,6 @@
 /*
  * Half_Stepping_Anticlockwise.c
- *
  *  Created on: 29-Aug-2021
- *   
  */
 
 #include "c8051f340.h"

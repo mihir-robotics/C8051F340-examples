@@ -1,8 +1,6 @@
 /*
  * LED_Relay_Buzzer.c
- *
  *  Created on: 10-Aug-2021
- *  
  */
 
 #include "c8051F340.h"

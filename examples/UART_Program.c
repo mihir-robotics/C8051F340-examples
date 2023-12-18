@@ -1,8 +1,6 @@
 /*
  * UART_Program.c
- *
  *  Created on: 21-Sep-2021
- *  
  */
 
 #include "c8051F340.h"		//C8051F340 library

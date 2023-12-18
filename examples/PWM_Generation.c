@@ -1,8 +1,6 @@
 /*
  * PWM_Generation.c
- *
  *  Created on: 14-Sep-2021
- *  
  */
 
 // Standard 8051 Library

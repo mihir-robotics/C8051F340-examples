@@ -37,7 +37,7 @@ void DelayMs(unsigned int Ms){
 	unsigned int i;
 	// Loop run "Ms" times
 	for(n=0;n<Ms;n++){
-		// Runs 65 NOP commands
+		// Runs 65 NOP commands to create delay
 		for(i=0;i<65;i++);
 	}
 }
